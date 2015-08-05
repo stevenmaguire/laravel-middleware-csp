@@ -1,0 +1,47 @@
+{
+    "name": "stevenmaguire/laravel-middleware-csp",
+    "description": "Provides support for enforcing Content Security Policy with headers in Laravel responses.",
+    "keywords": [
+        "middleware",
+        "psr7",
+        "content security policy",
+        "headers",
+        "laravel"
+    ],
+    "homepage": "https://github.com/stevenmaguire/laravel-middleware-csp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Maguire",
+            "email": "stevenmaguire@gmail.com",
+            "homepage": "https://github.com/stevenmaguire",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9",
+        "stevenmaguire/middleware-csp": "^0.1",
+        "guzzlehttp/psr7": "^1.1",
+        "illuminate/http": "^5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "mockery/mockery": "0.9.*@dev",
+        "squizlabs/php_codesniffer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stevenmaguire\\Http\\Middleware\\Laravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stevenmaguire\\Http\\Middleware\\Laravel\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
