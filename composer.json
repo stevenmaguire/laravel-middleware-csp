@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Stevenmaguire\\Http\\Middleware\\Laravel\\": "src"
+            "Stevenmaguire\\Laravel\\Http\\Middleware\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Stevenmaguire\\Http\\Middleware\\Laravel\\Test\\": "tests"
+            "Stevenmaguire\\Laravel\\Http\\Middleware\\Test\\": "tests"
         }
     },
     "extra": {

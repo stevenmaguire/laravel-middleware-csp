@@ -26,7 +26,7 @@ $ composer require stevenmaguire/laravel-middleware-csp
 
 protected $routeMiddleware = [
     //
-    'secure.content' => \Stevenmaguire\Http\Middleware\Laravel\EnforceContentSecurity::class,
+    'secure.content' => \Stevenmaguire\Laravel\Http\Middleware\EnforceContentSecurity::class,
     //
 ];
 ```

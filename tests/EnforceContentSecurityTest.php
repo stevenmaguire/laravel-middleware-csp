@@ -1,11 +1,11 @@
-<?php namespace Stevenmaguire\Http\Middleware\Laravel\Test;
+<?php namespace Stevenmaguire\Laravel\Http\Middleware\Test;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Mockery as m;
-use Stevenmaguire\Http\Middleware\Laravel\EnforceContentSecurity;
+use Stevenmaguire\Laravel\Http\Middleware\EnforceContentSecurity;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
 class EnforceContentSecurityTest extends \PHPUnit_Framework_TestCase

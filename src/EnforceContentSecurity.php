@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Http\Middleware\Laravel;
+<?php namespace Stevenmaguire\Laravel\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Response;
