@@ -2,10 +2,10 @@
 
 All Notable changes to `laravel-middleware-csp` will be documented in this file
 
-## NEXT - YYYY-MM-DD
+## 0.1.1 - YYYY-MM-DD
 
 ### Added
-- Nothing
+- Migrate to new namespace
 
 ### Deprecated
 - Nothing
