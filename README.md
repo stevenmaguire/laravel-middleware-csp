@@ -38,9 +38,9 @@ The following will apply all default profiles to the `gallery` route.
 ``` php
 // within app/Http/routes.php
 
-Route::get('gallery', ['middleware' => 'secure.content', function () {
+Route::get('gallery', ['middleware' => 'secure.content'], function () {
     return 'pictures!';
-}]);
+});
 ```
 
 The following will apply all default profiles and a specific `flickr` profile to the `gallery` route.
@@ -48,9 +48,9 @@ The following will apply all default profiles and a specific `flickr` profile to
 ``` php
 // within app/Http/routes.php
 
-Route::get('gallery', ['middleware' => 'secure.content:flickr', function () {
+Route::get('gallery', ['middleware' => 'secure.content:flickr'], function () {
     return 'pictures!';
-}]);
+});
 ```
 
 
