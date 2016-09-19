@@ -91,6 +91,8 @@ public function __construct()
 
 The default location for content security profiles is `security.content`. If you wish to use this default configuration, ensure your project includes the appropriate configuration files.
 
+You can find all available options on the owasp [CSP Cheat Sheet](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet).
+
 The structure of this configuration array is important. The middleware expects to find a `default` key with a string value and a `profiles` key with an array value.
 
 ``` php
@@ -191,6 +193,7 @@ return [
         'profiles' => [
             'global' => [
                 'base-uri' => "'self'",
+                'default-src' => "'self'",
                 'font-src' => [
                     "'self'",
                     'fonts.gstatic.com'
