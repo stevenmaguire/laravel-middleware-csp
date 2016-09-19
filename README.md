@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/stevenmaguire/laravel-middleware-csp.svg?style=flat-square)](https://scrutinizer-ci.com/g/stevenmaguire/laravel-middleware-csp)
 [![Total Downloads](https://img.shields.io/packagist/dt/stevenmaguire/laravel-middleware-csp.svg?style=flat-square)](https://packagist.org/packages/stevenmaguire/laravel-middleware-csp)
 
-Provides support for enforcing Content Security Policy with headers in Laravel responses.
+Provides support for enforcing Content Security Policy with headers in Laravel responses. This package extends and utilizes the [framework agnostic Content Security Policy Middleware for PSR 7 response](https://github.com/stevenmaguire/middleware-csp-php).
 
 ## Install
 
