@@ -1,6 +1,7 @@
 <?php namespace Stevenmaguire\Laravel\Http\Middleware;
 
 use Closure;
+use Exception;
 use Illuminate\Http\Response;
 use GuzzleHttp\Psr7\Response as PsrResponse;
 use Psr\Http\Message\ResponseInterface;
@@ -47,11 +48,18 @@ class EnforceContentSecurity extends BaseMiddleware
 
             $this->setProfilesWithParameters(func_get_args());
 
+            $exception = $response->exception;
+
             $psr7Response = $this->createPsr7Response($response);
 
             $psr7Response = $this->addPolicyHeader($psr7Response);
 
             $response = $this->createLaravelResponse($psr7Response);
+
+            if ($exception instanceof Exception) {
+                $response->withException($exception);
+            }
+
         }
 
         return $response;
